@@ -1,46 +1,72 @@
 body {
-    background-color: #602c74;
+    background-color: #CDE8E5;
     font-weight: bold;
     font-family: Arial;
 }
+
 .container {
     font-size: 24px;
     width: 900px;
     height: auto;
-    background-color: #ffae31;
+    background-color: #7AB2B2;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     text-align: center;
     padding-top: 1px;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
     border-radius: 20px;
+    color: white;
 }
+
 .column {
     width: 220px;
     height: auto;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: #602c74;
+    background-color: #4D869C;
     margin-left: 25px;
     margin-right: 25px;
-    overflow : auto;
+    overflow: auto;
     display: inline-block
 }
-.column h2{
+
+.column h2 {
     font-size: 22px;
     color: white;
+    padding-bottom: -2px;
 }
-.column p{
+
+.column p {
     font-style: italic;
     font-size: 15px;
-    color: #ffae31;
+    color: #CDE8E5;
+    padding-top: -2px;
 }
-.column img{
+
+.column img {
     width: 190px;
     border-radius: 50%;
-    border:5px solid gray;
+    border: 5px solid gray;
 }
+
+.column button {
+    background-color: white;
+    border: none;
+    color: #4D869C;
+    padding: 10px 65px;
+    text-align: center;
+    display: inline-block;
+    font-style: bold;
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 2px 2px #888888;
+}
+
 #info {
     font-size: 15px;
     color: white;
