@@ -1,0 +1,68 @@
+.body{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    margin-left: 25%;
+    margin-right: auto;
+    text-align: center;
+    overflow: auto;
+    background-color: cadetblue;
+    border-radius: 20px;
+    width: 900px;
+    height: auto;
+    padding: 20px;
+}
+h1{
+    font-size: 24px;
+    color: white;
+}
+.bcon{
+    display: inline-flex;
+    overflow: auto;
+}.con{
+    background-color: lightblue;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    width: 220px;
+    height: auto;
+    overflow: auto;
+    padding: 2px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.con img{
+    border-radius: 50%;
+    border: 2px solid grey;
+    width: 196px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.con h2{
+    font-size: 22px;
+    text-align: center;
+}
+.con p{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+#info {
+    font-weight: bold;
+    font-size: 15px;
+    color: azure;
+    text-align: left;
+}
+.con button{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 196px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px;
+    color: aquamarine;
+}
