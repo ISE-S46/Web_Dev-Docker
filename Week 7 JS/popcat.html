@@ -2,14 +2,15 @@
 <html>
     <head>
         <title>Pop cat 2</title>
-        <script src="popcat2.js"></script>
+        <script src="popcat.js"></script>
     </head>
-    <body style="text-align: center;">
+    <body style="text-align: center;" id="body">
         <h1>Pop cat 2</h1>
         <h2>(Totally not pop cat)</h2>
-        <h1>0</h1>
-        <div>
-            <img src = "popcat1.jpg">
+        <div onmousedown="pop()" onmouseup="popback()">
+            <h1>Clicks: <a id="clicks">0</a></h1>
+            <img src = "popcat1.jpg" id="car">
         </div>
+        <button id = "b" onclick="reset()" style="margin-top: 30px; width: 200px;">Reset</button>
     </body>
 </html>
