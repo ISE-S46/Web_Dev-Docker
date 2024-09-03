@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+        <title>test callback</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <p>Hello World</p>
+        <button>ok</button>
+        <button>cancel</button>
+
+        <img id="car" src="https://i.ytimg.com/vi/S8Kot7Iih68/maxresdefault.jpg" width="300">
+
+    </body>
+</html>
+<script>
+    $('button').click(function(){
+        $('p').hide("slow",function(){
+            alert("This paragraph is now hidden.");
+        });
+    });
+    $('button').mouseover(function(){
+        $(this).css("background-color","red");
+    });
+    $('button').mouseleave(function(){
+        $(this).css("background-color","white");
+    });
+
+    var carAnimation = function(){
+        var carwidth = $('#car').attr('width');
+        $('#car').attr('width', carwidth + 3);
+    };
+    window.setInterval(carAnimation, 1000);
+</script>
