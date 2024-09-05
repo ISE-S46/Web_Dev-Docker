@@ -21,11 +21,9 @@ function startspin() {
 }
 
 function Speed() {
-    if (interval > 10) { // Ensure interval doesn't go below a minimum value
-        interval -= 6;
-        window.clearInterval(Timer); // Clear the existing interval
-        Timer = window.setInterval(startspin, interval);
-    }
+    interval -= 6;
+    window.clearInterval(Timer); // Clear the existing interval
+    Timer = window.setInterval(startspin, interval);
 }
 
 function Stop() {
