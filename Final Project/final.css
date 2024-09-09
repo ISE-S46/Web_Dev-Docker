@@ -1,0 +1,10 @@
+body {
+    background-color: azure;
+}
+.banner {
+    color: azure;
+    font-size: 30px;
+    background-color: cornflowerblue;
+    text-align: center;
+    margin: 0;
+}
