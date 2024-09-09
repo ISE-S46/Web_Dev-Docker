@@ -1,10 +1,79 @@
 body {
     background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .banner {
     color: azure;
     font-size: 30px;
     background-color: cornflowerblue;
     text-align: center;
     margin: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
+
+.container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-inline: auto;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#item {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    background-color: aliceblue;
+    text-align: center;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+
+#item img {
+    width: 90%;
+    border: 2px solid aqua;
+}
+
+.tab {
+    float: left;
+    font-size: 30px;
+    background-color: cadetblue;
+    height: 600px;
+    width: 300px;
+    padding-left: 30px;
+    color: azure;
+}
+
+#title{
+    text-align: center;
+    padding-right: 30px;
+}
+
+#function1 {
+    font-size: 20px;
+}
+
+#function2 {
+    font-size: 20px;
+}
+
+#myform {
+    text-align: center;
+    padding: 5px;
+    margin: 2%;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
