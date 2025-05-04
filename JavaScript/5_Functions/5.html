@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Hello</h2>
+
+    <script>
+
+        function myFunction(num1, num2){
+            //numx and name is local variable cant access from outside of function
+            let numx = num1 * num2;
+            let name = "rover";
+            console.log("Inside function", name);
+            return numx;
+        }
+
+        let sum = myFunction(10, 150);
+        console.log(sum);
+
+        let name = myFunction();
+        console.log("outside function", name);
+
+        // Arrow function
+        const add = (a, b) => a+b;
+
+        console.log(add(5,10));
+
+        // Arrow function without parameter
+        const hello = () => "hello";
+        console.log(hello());
+
+        const myFunc = () => {
+            console.log("This is arrow function");
+        }
+        myFunc();
+
+    </script>
+</body>
+
+</html>

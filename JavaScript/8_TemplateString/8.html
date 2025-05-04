@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let text = "String";
+        let FirstName = "Hitori";
+        let LastName = "Gotoh";
+        // let greet = FirstName + " " + LastName;
+
+        // Template String / Template Literal
+        let greet = `${FirstName} ${LastName} nick name "Bocchi" `;
+
+        let price = 100;
+        let VAT = 0.07;
+        let totalPrice = `Total: ${(price * (1 + 0.07)).toFixed(2)} baht`; //toFixed = set decimal to 2
+
+        console.log(greet);
+        console.log(greet.length);
+        console.log(totalPrice);
+
+    </script>
+</body>
+
+</html>

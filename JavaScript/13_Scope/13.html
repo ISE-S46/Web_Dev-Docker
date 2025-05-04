@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Global Scope
+        let x = 20;
+        const z = 30;
+
+        // Block Scope
+        {
+            let bocchi = "Bocchi";
+            console.log(bocchi);
+        }
+        //console.log(bocchi);
+
+        function gacha() {
+            // local scope
+            let gacha = "HSR"; //all function scope are local, but not all local scope are function scope
+            console.log(gacha);
+            console.log(x, z);
+        }
+        gacha();
+        //console.log(gacha);
+
+        function example() {
+            var a = 1;      // function-scoped, also local
+            if (true) {
+                let b = 2;    // block-scoped, also local
+            }
+            // 'a' is accessible here, 'b' is not
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- this refer to it self (in this case is the button)-->
+    <button onclick="this.style.display='none';"> Click to remove button</button> 
+
+    <script>
+
+        console.log(this); // output window object, this is global object
+
+        function myFunc(){
+            console.log("inside function", this); // same out put as console.log(this);
+        }
+
+        myFunc();
+
+        // Object Literal
+        const gacha = {
+            name: "Wuthering Waves",
+            company: "Kuro",
+            year: 2024,
+            // Method 
+            displayInfo() {
+                // `` template literal
+                console.log(`${this.name}, ${this.company}, Year: ${this.year}`);
+            }
+        }
+        console.log(gacha.name);
+        console.log(gacha.company);
+        gacha.displayInfo();
+
+        const bocchi = {
+            FirstName: "Hitori",
+            LastName: "Gotou", 
+            FullName() {
+                return this.FirstName + " " + bocchi.LastName; // can replace this with object name
+            }
+        }
+        console.log(bocchi.FullName());
+
+        // Date object
+        const date = new Date();
+        console.log(date);
+
+        // Object Constructor
+        function GACHA(name, company, year){
+            this.name = name;
+            this.company = company;
+            this.year = year;
+            this.displayInfo = () => {
+                console.log(`${this.name}, ${this.company}, Year: ${this.year}`);
+            }
+        }
+
+        // new keyword
+        const gacha1 = new GACHA("Honkai Star Rail", "Hoyoverse", 2023);
+        const gacha2 = new GACHA("Honkai Impact 3rd", "Hoyoverse", 2016);
+
+        console.log(gacha1.name);
+        console.log(gacha2.name);
+
+        gacha1.displayInfo();
+        gacha2.displayInfo();
+
+    </script>
+</body>
+
+</html>

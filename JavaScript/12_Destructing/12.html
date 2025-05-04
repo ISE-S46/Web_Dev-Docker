@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const person = {
+            firstName: "Kita",
+            lastName: "Ikuyo",
+            age: "16"
+        };
+
+        let {firstName: FN, age, lastName : LN, country = "Japan"} = person; // country = "Japan" is default value
+        console.log(FN, LN, age, country);
+
+        const btr = ["Bocchi", "Kita", "Ryou", "Nijika"];
+        let [btr1, , btr3] = btr;
+        console.log(btr1, btr3);
+
+        const numbers = [1,2,3,4,5,6,7,8];
+        const [n1, n2, ...rest] = numbers;
+        console.log(n1);
+        console.log(n2);
+        console.log(rest);
+
+        let firstName = "Kita";
+        let lastName = "Ikuyo";
+
+        [firstName, lastName] = [lastName, firstName] // swap position
+        console.log(firstName);
+        console.log(lastName);
+
+    </script>
+</body>
+
+</html>
